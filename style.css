@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --main-color: #2b63d9;
+  --btns-links: #437ef7;
+  --fonts-color: #272d37;
+  --p-color: #5f6d7e;
+  --p-section: #b1ccfb;
+  --heading-footer: #f9f9f9;
+  --p-footer: #a5acba;
+  --footer-color: #151b28;
+}
+
+/* -------------------Genaric Styles------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-btn {
+  padding: 0.75rem 1.125rem;
+  color: white !important;
+  background-color: var(--btns-links);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  border: none;
+}
+.reversed-btn {
+  padding: 0.75rem 1.125rem;
+  color: var(--btns-links) !important;
+  background-color: white;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  border: none;
+}
+h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+  text-align: center;
+  color: var(--fonts-color);
+  text-transform: capitalize;
+  width: 50%;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.625rem;
+  color: white;
+  text-transform: capitalize;
+}
+h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+  color: var(--fonts-color);
+  text-transform: capitalize;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+}
+.footer-headings {
+  font-weight: 600;
+  color: var(--heading-footer) !important;
+}
+a {
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  text-transform: capitalize;
+}
+ul {
+  list-style: none;
+}
+span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: -1px;
+  color: var(--p-color);
+  text-transform: capitalize;
+}
+img {
+  display: inline-block;
+  width: 100%;
+  object-fit: contain;
+}
+.arrow {
+  width: unset;
+}
+.arrow-link {
+  gap: 1rem;
+  color: var(--btns-links);
+}
+.arrow-link img {
+  width: unset;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.justify-c {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-c {
+  align-items: center;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-4 {
+  gap: 4rem;
+}
+
+/* -------------------Header Styles------------------- */
+header {
+  padding: 1.25rem 5rem;
+}
+header .container {
+  height: 100%;
+}
+
+header .logo {
+  width: 160px;
+}
+header ul a {
+  color: var(--fonts-color);
+}
+header ul a .arrow {
+  margin-left: 0.75rem;
+}
+
+header .right-section .btns {
+  gap: 1.5rem;
+}
+header .right-section .btns a {
+  color: var(--btns-links);
+}
+header .right-section .bars {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+/* -------------------Hero Section Styles------------------- */
+
+.hero .container {
+  padding: 5.75rem 0;
+}
+
+.hero span {
+  color: var(--btns-links);
+}
+
+/* -------------------Newletter Section Styles------------------- */
+
+#newsletter {
+  background-color: var(--main-color);
+  padding: 4rem 0;
+}
+#newsletter .container {
+  gap: 2rem;
+}
+#newsletter .left-section {
+  width: 55%;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+#newsletter .left-section p {
+  color: var(--p-section);
+  width: 80%;
+}
+#newsletter .right-section {
+  width: 45%;
+  align-items: flex-end;
+}
+#newsletter .right-section .form-container {
+  width: 90%;
+}
+#newsletter .right-section .form {
+  width: 100%;
+  gap: 0.5rem;
+}
+#newsletter .right-section .form span {
+  color: var(--p-section);
+}
+
+#newsletter .right-section input[type="email"] {
+  width: 75%;
+  padding: 0.93rem 1rem;
+  border-radius: 6px 0px 0px 6px;
+  border: none;
+  outline: none;
+}
+
+#newsletter .right-section input[type="submit"] {
+  border-radius: 0 6px 6px 0;
+}
+.second-newsletter {
+  display: none;
+}
+
+/* -------------------Tools Section Styles------------------- */
+.tools {
+  padding: 4rem 0;
+}
+.tools .container {
+  gap: 2.5rem;
+}
+.tools .left-section {
+  gap: 1.5rem;
+  width: 45%;
+}
+.tools .left-section figure .section-img {
+  display: none;
+}
+.tools .right-section {
+  justify-content: flex-end;
+  width: 55%;
+}
+.tools .right-section figure {
+  width: 188px;
+}
+
+.tools .right-section .card {
+  gap: 1.5rem;
+  width: 100%;
+}
+.tools .right-section .card .card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tools .right-section .card .card-title .top-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.tools p {
+  color: var(--p-color);
+}
+
+/* -------------------Latest Blog Section Styles------------------- */
+.latest-blog {
+  padding: 4rem 0;
+}
+.latest-blog .container {
+  gap: 4rem;
+}
+.latest-blog .container h2 {
+  color: var(--fonts-color);
+  text-align: center;
+  font-weight: 700;
+}
+.latest-blog .cards {
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.latest-blog .cards .card {
+  width: 30%;
+  gap: 1rem;
+}
+
+.latest-blog .cards .card .desc {
+  gap: 0.5rem;
+}
+
+/* -------------------SignUp Section Styles------------------- */
+.signup {
+  background-color: var(--main-color);
+  padding: 4rem 0;
+}
+.signup .title {
+  gap: 0.5rem;
+  width: 55%;
+  text-align: center;
+}
+.signup .title span {
+  color: white;
+}
+.signup .main-btn {
+  display: none;
+}
+/* ------------------- Footer Styles------------------- */
+footer {
+  padding: 4rem 0;
+  background-color: var(--footer-color);
+}
+
+footer .upper-section {
+  gap: 11.45rem;
+}
+footer .company-desc {
+  min-width: 25%;
+}
+footer .company-desc input[type="email"] {
+  width: 80%;
+  padding: 0.93rem 1rem;
+  border-radius: 6px 0px 0px 6px;
+  border: none;
+  outline: none;
+  color: var(--p-footer);
+  background-color: #2e3545;
+  font-size: 0.9375rem;
+}
+
+footer .upper-section .company-desc input[type="submit"] {
+  border-radius: 0 6px 6px 0;
+}
+footer .upper-section figure {
+  width: 160px;
+}
+footer .upper-section p {
+  color: var(--p-footer);
+}
+footer .upper-section .footer-links {
+  min-width: 12%;
+  gap: 1.5rem;
+}
+footer .upper-section .footer-links ul {
+  gap: 0.75rem;
+}
+footer .upper-section .footer-links ul a {
+  color: var(--p-footer);
+  font-weight: 500;
+}
+footer .copyrights {
+  padding-top: 2rem;
+}
+
+footer .copyrights span {
+  color: var(--p-footer);
+}
+
+footer #company {
+  order: 2;
+}
+footer #why-us {
+  order: 1;
+}
+footer #resources {
+  order: 3;
+}
